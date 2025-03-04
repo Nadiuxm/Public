@@ -66,8 +66,7 @@ sudo chown -R www-data:www-data /var/www/html/wordpress && \
 sudo chmod -R 755 /var/www/html/wordpress
 ```
 admin
-test@1234
-
+MONMOTDEPASSE
 ## SSL certbot
 
 ```
