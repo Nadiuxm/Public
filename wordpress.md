@@ -7,7 +7,8 @@ Commande pou installation du lamp
 ### Apache
 
 Sous Debian
-```sudo apt-get install -y apache2
+```
+sudo apt-get install -y apache2
 sudo systemctl enable apache2
 sudo a2enmod rewrite
 sudo a2enmod deflate
