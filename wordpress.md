@@ -55,6 +55,23 @@ FLUSH PRIVILEGES;
 EXIT
 ```
 
+```
+<VirtualHost *:80>
+    ServerName lamwansecu.alcyon.ovh
+    DocumentRoot /var/www/html/wordpress
+
+    <Directory /var/www/html/wordpress>
+        Options FollowSymLinks
+        AllowOverride All
+        Require all granted
+    </Directory>
+
+    # Logs
+    ErrorLog ${APACHE_LOG_DIR}/wordpress-error.log
+    CustomLog ${APACHE_LOG_DIR}/wordpress-access.log combined
+</VirtualHost>
+```
+
 ### Wordpress
 
 ```
