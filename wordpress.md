@@ -49,7 +49,7 @@ y
 
 ```
 CREATE DATABASE wordpress;
-GRANT ALL PRIVILEGES ON wordpress.* TO admin@localhost IDENTIFIED BY "test@1234";
+GRANT ALL PRIVILEGES ON wordpress.* TO admin@localhost IDENTIFIED BY "MONTMOTDEPASSE";
 FLUSH PRIVILEGES;
 EXIT
 ```
