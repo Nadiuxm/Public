@@ -8,23 +8,24 @@ Commande pou installation du lamp
 
 Sous Debian
 ```
-sudo apt-get install -y apache2
-sudo systemctl enable apache2
-sudo a2enmod rewrite
-sudo a2enmod deflate
-sudo a2enmod headers
-sudo a2enmod ssl
+sudo apt-get install -y apache2 && \
+sudo systemctl enable apache2 && \
+sudo a2enmod rewrite && \
+sudo a2enmod deflate && \
+sudo a2enmod headers && \
+sudo a2enmod ssl && \
 sudo systemctl restart apache2
 ```
 
 ### PHP
 
 ```
-sudo apt-get install -y apache2-utils
+sudo apt install php -y && \
+sudo apt-get install -y apache2-utils && \
 sudo apt-get install -y php-pdo php-mysql php-zip php-gd php-mbstring php-curl php-xml php-pear php-bcmath
 ```
 
-Se rendre dans sudo nano /var/www/html/phpinfo.php et ajouter
+Se rendre dans sudo nano /var/www/html/phpinfo.php et ajouter (OPTIONNEL)
 
 ```
 <?php
@@ -35,7 +36,7 @@ phpinfo();
 ### MariaDB
 
 ```
-sudo apt-get install -y mariadb-server
+sudo apt-get install -y mariadb-server && \
 sudo mariadb-secure-installation
 ```
 réponse :
