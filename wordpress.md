@@ -72,6 +72,11 @@ EXIT
 </VirtualHost>
 ```
 
+```
+sudo a2dissite 000-default.conf
+sudo a2ensite website.conf
+```
+
 ### Wordpress
 
 ```
